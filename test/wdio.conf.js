@@ -8,7 +8,7 @@ exports.config = {
   capabilities: [
     { browserName: 'phantomjs' }
   ],
-  services: ['dot', 'spec', 'phantomjs'],
+  services: ['phantomjs'],
   exclude: [],
   maxInstances: 2, // it depends on the plan of the cloud servvice
   sync: true,
@@ -18,7 +18,7 @@ exports.config = {
   connectionRetryTimeout: 90000,
   connectionRetryCount: 3,
   framework: 'mocha',
-  reporters: [Reporter],
+  reporters: ['dot', 'spec', Reporter],
   mochaOpts: {
     ui: 'bdd',
     timeout: 30000

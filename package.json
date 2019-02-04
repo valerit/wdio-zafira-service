@@ -4,7 +4,7 @@
   "description": "js listener for zafira",
   "main": "index.js",
   "scripts": {
-    "test": "wdio test/*.js"
+    "test": "wdio test/wdio.conf.js"
   },
   "keywords": [
     "zafira",
@@ -25,6 +25,7 @@
     "require-dir": "^0.3.0",
     "wdio-mocha-framework": "^0.6.4",
     "wdio-phantomjs-service": "^0.2.2",
+    "wdio-spec-reporter": "^0.1.5",
     "webdriverio": "^4.14.2"
   }
 }
