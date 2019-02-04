@@ -4,7 +4,7 @@
   "description": "js listener for zafira",
   "main": "index.js",
   "scripts": {
-    "test": "mocha -t 30000 test/e2e.js"
+    "test": "wdio test/*.js"
   },
   "keywords": [
     "zafira",
@@ -18,9 +18,13 @@
     "request-promise": "^4.2.2"
   },
   "devDependencies": {
+    "@wdio/dot-reporter": "^5.4.3",
+    "@wdio/spec-reporter": "^5.4.3",
     "mocha": "^3.0.0",
     "phantomjs-prebuilt": "^2.1.10",
     "require-dir": "^0.3.0",
+    "wdio-mocha-framework": "^0.6.4",
+    "wdio-phantomjs-service": "^0.2.2",
     "webdriverio": "^4.14.2"
   }
 }
