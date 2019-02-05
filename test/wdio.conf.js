@@ -9,7 +9,7 @@ exports.config = {
   capabilities: [
     { browserName: 'phantomjs' }
   ],
-  services: ['phantomjs', new Service(5000)],
+  services: ['phantomjs', new Service(7000)],
   exclude: [],
   maxInstances: 2, // it depends on the plan of the cloud servvice
   sync: true,
