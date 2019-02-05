@@ -20,6 +20,12 @@ exports.config = {
   connectionRetryCount: 3,
   framework: 'mocha',
   reporters: ['dot', 'spec', Reporter],
+  reporterOptions: {
+    ZafiroWDIOReporter: {
+      refreshToken: 'eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiIyIiwicGFzc3dvcmQiOiIveU45VDZZaHY5ZHRCeDNmSUFZSmxqeG12YzRObGhrMCIsInRlbmFudCI6InphZmlyYSIsImV4cCI6MTMwMzk3OTc0MzUwfQ.DuKkYg4FnU1Knyas7-YRF-wNk_Uv5wmRqmds44Z134r7VDvyoPr2KZmYZuu5dQIgErfyV4aN0e5zYgWGEebpUg'
+
+    }
+  },
   mochaOpts: {
     ui: 'bdd',
     timeout: 30000
