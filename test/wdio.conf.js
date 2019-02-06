@@ -9,7 +9,7 @@ exports.config = {
   capabilities: [
     { browserName: 'phantomjs' }
   ],
-  services: ['phantomjs', new Service(7000)],
+  services: ['phantomjs', new Service(10000)],
   exclude: [],
   maxInstances: 2, // it depends on the plan of the cloud servvice
   sync: true,
@@ -32,6 +32,10 @@ exports.config = {
         "jenkinsHost": process.env.HOST || 'demo.qaprosoft.com',
         "jobURL": process.env.BUILD_URL || 'http://demo.qaprosoft.com/jenkins/job/valeridemo/5/', //  // Jenkins Build URL
         "name": process.env.JOB_NAME || 'valeridemo',
+      },
+      run: {
+        buildNumber: process.env.BUILD_NUMBER || 5,
+        startedBy: '' // One of  "SCHEDULER", "UPSTREAM_JOB", "HUMAN"
       }
     }
   },
