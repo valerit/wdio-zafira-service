@@ -28,7 +28,11 @@ exports.config = {
         fileName: 'valeri.xml',
         name: 'valeri_test',
       },
-      jenkinsHost: "http://demo.qaprosoft.com/jenkins/"
+      job: { // Jenkins Settings
+        "jenkinsHost": process.env.HOST || 'demo.qaprosoft.com',
+        "jobURL": process.env.BUILD_URL || 'http://demo.qaprosoft.com/jenkins/job/valeridemo/5/', //  // Jenkins Build URL
+        "name": process.env.JOB_NAME || 'valeridemo',
+      }
     }
   },
   mochaOpts: {
