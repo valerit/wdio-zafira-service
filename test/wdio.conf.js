@@ -27,7 +27,8 @@ exports.config = {
       testSuite: {
         fileName: 'valeri.xml',
         name: 'valeri_test',
-      }
+      },
+      jenkinsHost: "http://demo.qaprosoft.com/jenkins/"
     }
   },
   mochaOpts: {
