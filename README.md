@@ -2,8 +2,11 @@
 A custom service for WDIO to report tests to (Zafira Dashboard)[http://demo.qaprosoft.com/zafira/]
 
 ## How to use
+### Requirements
 
-An example wdio config
+- Node.js 10.x +
+
+### Example wdio config
 
 ```
 const ZfService = require('wdio-zafira-service')
