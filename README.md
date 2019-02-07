@@ -6,6 +6,10 @@ A custom service for WDIO to report tests to (Zafira Dashboard)[http://demo.qapr
 
 - Node.js 10.x +
 
+### Install
+
+- npm install wdio-zafira-service
+
 ### Example wdio config
 
 ```
