@@ -1,5 +1,5 @@
 # wdio-zafira-reporter
-A custom service for WDIO to report tests to [Zafira Dashboard] http://demo.qaprosoft.com/zafira/) 
+A custom service for WDIO to report tests to (Zafira Dashboard)[http://demo.qaprosoft.com/zafira/]
 
 ## How to use
 
