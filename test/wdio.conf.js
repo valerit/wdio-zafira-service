@@ -1,5 +1,5 @@
 'use strict'
-const Service = require('../lib')
+const ZfService = require('../lib')
 
 exports.config = {
   specs: [
@@ -8,7 +8,7 @@ exports.config = {
   capabilities: [
     { browserName: 'phantomjs' }
   ],
-  services: ['phantomjs', new Service(
+  services: ['phantomjs', new ZfService(
     { // Service Options
       refreshToken: 'eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiIyIiwicGFzc3dvcmQiOiIveU45VDZZaHY5ZHRCeDNmSUFZSmxqeG12YzRObGhrMCIsInRlbmFudCI6InphZmlyYSIsImV4cCI6MTMwMzk3OTc0MzUwfQ.DuKkYg4FnU1Knyas7-YRF-wNk_Uv5wmRqmds44Z134r7VDvyoPr2KZmYZuu5dQIgErfyV4aN0e5zYgWGEebpUg',
       username: 'admin',
@@ -22,8 +22,8 @@ exports.config = {
         "name": process.env.JOB_NAME || 'valeridemo',
       },
       run: {
-        buildNumber: process.env.BUILD_NUMBER || 5,
-        startedBy: '' // One of  "SCHEDULER", "UPSTREAM_JOB", "HUMAN"
+        buildNumber: process.env.BUILD_NUMBER || 6,
+        startedBy: process.env.BUILD_CAUSE_MANUALTRIGGER ? 'HUMAN' : 'SCHEDULER' // One of  "SCHEDULER", "UPSTREAM_JOB", "HUMAN"
       }
     }
   )],
