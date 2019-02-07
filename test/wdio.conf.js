@@ -1,6 +1,5 @@
 'use strict'
-const Reporter = require('../lib')
-const Service = require('../lib/service')
+const Service = require('../lib')
 
 exports.config = {
   specs: [
