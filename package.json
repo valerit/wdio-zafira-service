@@ -13,6 +13,10 @@
   ],
   "author": "Valeri",
   "license": "ISC",
+  "repository": {
+    "type" : "git",
+    "url" : "https://github.com/valerit/wdio-zafira-service.git"
+  },
   "dependencies": {
     "@wdio/reporter": "^5.4.3",
     "request": "^2.88.0",
