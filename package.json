@@ -1,5 +1,5 @@
 {
-  "name": "wdio-zafira-service-test",
+  "name": "wdio-zafira-service",
   "version": "0.0.1",
   "description": "zafira report service for wdio",
   "main": "lib/index.js",
