@@ -6,7 +6,7 @@ A custom service for WDIO to report tests to (Zafira Dashboard)[http://demo.qapr
 An example wdio config
 
 ```
-const ZfService = require('wdio-zafira-reporter')
+const ZfService = require('wdio-zafira-service')
 
 exports.config = {
   specs: [

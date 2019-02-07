@@ -1,16 +1,17 @@
 {
-  "name": "zafira-js",
+  "name": "wdio-zafira-service",
   "version": "0.0.1",
-  "description": "js listener for zafira",
+  "description": "zafira report service for wdio",
   "main": "index.js",
   "scripts": {
     "test": "wdio test/wdio.conf.js"
   },
   "keywords": [
-    "zafira",
-    "js"
+    "wdio-plugin",
+    "wdio-service",
+    "zafira"
   ],
-  "author": "UnderArmour",
+  "author": "Valeri",
   "license": "ISC",
   "dependencies": {
     "@wdio/reporter": "^5.4.3",
