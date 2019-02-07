@@ -15,7 +15,8 @@
   "dependencies": {
     "@wdio/reporter": "^5.4.3",
     "request": "^2.88.0",
-    "request-promise": "^4.2.2"
+    "request-promise": "^4.2.2",
+    "rimraf": "^2.6.3"
   },
   "devDependencies": {
     "@wdio/dot-reporter": "^5.4.3",
